@@ -33,6 +33,8 @@ public class hookScript : MonoBehaviour
         is_grabbed = true;
 
         concrete = col.gameObject;
+        
+        transform.GetChild(0).GetComponent<ParticleSystem>().Play();
     }
 
 
